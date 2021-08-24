@@ -11,4 +11,16 @@
 	
 
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+
+	error_reporting(E_ALL);
+	
+	ini_set('display_errors',(debug == true ? 'On': 'Off'));
+
+
+
+	spl_autoload_register('myAutoloader'); 
+	function myAutoloader($className){
+    	$path = ABSPATH.'classes/';
+		if(file_exists($path.$className.'.php')) require_once $path.$className.'.php';
+	}
 ?>
