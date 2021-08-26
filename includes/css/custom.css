@@ -1,0 +1,12 @@
+.sport-background{
+	  background-image: url('/images/login/football-461340_1280.jpg');
+ background-position: center;
+	background-size:cover;
+ animation: changeBg 40s infinite; }
+
+@keyframes changeBg{
+   1% {background-image: url("/images/login/football-461340_1280.jpg");}
+   50% {background-image: url("/images/login/golf-3216250_1280.jpg");}
+   80% {background-image: url("/images/login/track-and-field-5981702_1280.jpg");}
+   100% {background-image: url("/images/login/football-461340_1280.jpg");}
+}
