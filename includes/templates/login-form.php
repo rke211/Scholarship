@@ -28,7 +28,7 @@ if(isset($_POST['btnLogin'])){
 	  	<div class="col-12 col-md-7 sport-background"></div>
 	  	<div class="col-12 col-md-5 bg-dark d-flex align-items-center">
 			<div class="p-5 w-100 text-center">
-			<form method="post">
+			<form method="post"  class="needs-validation" novalidate
 				<h2 class="text-light py-4">Sign In</h2>
 				<?php echo (isset($feedback)?$feedback:''); ?>
 				<div class="form-floating my-2">
